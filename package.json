@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/app.ts",
   "scripts": {
-    "test": "jest __tests__ --runInBand",
+    "test": "jest **/*.test.ts --runInBand",
     "dev": "concurrently \"tsc --watch\" \"tsnd --respawn -r tsconfig-paths/register src/app.ts\"",
     "watch": "tsc --watch",
     "doc": "typedoc",
